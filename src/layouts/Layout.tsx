@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
+import Modal from "../components/Modal";
 
 export default function Layout() {
   //? Outlet es um componente de react Router Dom para poder componer varios Layots que comparten los
@@ -11,6 +12,7 @@ export default function Layout() {
         <Outlet />{" "}
         {/* contenido que contiene cada una de las paginas que estan dentro del router */}
       </main>
+      <Modal/>
     </>
   );
 }
